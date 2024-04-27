@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Audio</title>
+</head>
+<body>
+    <h1>Reproducción de Audio</h1>
+    <script>
+        var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+        var f = new Date();
+        document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+    </script> <br>
+
+    <audio src="assets/Valorant.mp3" preload="auto" controls></audio> <br>
+    <audio id="player" src="assets/Valorant.mp3" autoplay loop></audio> <br>
+    <button onclick="document.getElementById('player');">Detener Audio</button><br>
+
+    <audio src="assets/bells.mp3" preload="auto" controls></audio> <br>
+    <audio id="player" src="assets/bells.mp3" autoplay loop></audio> <br>
+    <button onclick="document.getElementById('player');">Detener Audio</button><br>
+
+    <audio src="assets/Raindrops.mp3" preload="auto" controls></audio> <br>
+    <audio id="player" src="assets/Raindrops.mp3" autoplay loop></audio> <br>
+    <button onclick="document.getElementById('player');">Detener Audio</button>
+</body>
+</html>
